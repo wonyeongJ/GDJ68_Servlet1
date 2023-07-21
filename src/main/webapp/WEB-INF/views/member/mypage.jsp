@@ -6,14 +6,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<c:import url="../temp/bootStrap.jsp"></c:import>
 </head>
 <body>
-	<c:if test="${result gt 0}">
-		<h1>성공</h1>
-	</c:if>
-	<c:if test="${result le 0}">
-		<h1>실패</h1>
-	</c:if>
-	<a href="/">Home</a>
+	<c:import url="../temp/header.jsp"></c:import>
+	<section class="container mt-5">	
+		<h1 class="my-4">My Page</h1>
+		
+		<div>
+			${member.id} : ${sessionScope.member.name}
+			
+		</div>
+
+	
+	
+	</section>
+
 </body>
 </html>
